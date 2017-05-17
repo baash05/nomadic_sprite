@@ -85,12 +85,10 @@ hr.small {
     padding: 15px;
   }
   .navbar-custom .nav li a:hover {
-    color: white;
-    background-color: grey;
+    color: black;
   }
   .navbar-custom .navbar-brand:hover{
-    color: white;
-    background-color: grey;
+    color: black;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -371,7 +369,6 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:focus {
   color: white;
   background-color: grey;
-  border: 1px solid black;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,

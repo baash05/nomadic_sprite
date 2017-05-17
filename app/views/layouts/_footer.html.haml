@@ -6,7 +6,8 @@
       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
         %ul.list-inline.text-center
           %li
-            %a{:href => "#"}
+            - message = "I just spent some quality time on the Nomadic Sprite website. Take a look www.nomadicsprites.com"
+            %a{target: '_blank', :href => "https://twitter.com/share?url=www.nomadicsprites.com&text=#{message}"}
               %span.fa-stack.fa-lg
                 %i.fa.fa-circle.fa-stack-2x
                 %i.fa.fa-twitter.fa-stack-1x.fa-inverse
@@ -15,9 +16,4 @@
               %span.fa-stack.fa-lg
                 %i.fa.fa-circle.fa-stack-2x
                 %i.fa.fa-facebook.fa-stack-1x.fa-inverse
-          %li
-            %a{:href => "#"}
-              %span.fa-stack.fa-lg
-                %i.fa.fa-circle.fa-stack-2x
-                %i.fa.fa-github.fa-stack-1x.fa-inverse
-        %p.copyright.text-muted Copyright © Your Website 2014
+        %p.copyright.text-muted Copyright © Nomadic Sprites 2017
