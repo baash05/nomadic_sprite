@@ -12,7 +12,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
@@ -34,3 +34,5 @@ group :development do
   gem 'hub', :require=>nil
   gem 'rails_layout'
 end
+
+gem "haml-rails"

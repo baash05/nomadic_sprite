@@ -24,6 +24,10 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
+  color: #000
+}
+.subheading{
+  color: #000
 }
 a {
   color: #404040;
@@ -44,10 +48,10 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: white;
+  border-color: purple;
 }
 .navbar-custom {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -65,11 +69,11 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background: white;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: blue;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
@@ -77,7 +81,7 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: red;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -146,7 +150,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color: red;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -200,7 +204,7 @@ hr.small {
   font-size: 20px;
 }
 .intro-header .post-heading .meta a {
-  color: white;
+  color: green;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
@@ -342,7 +346,7 @@ form .row:first-child .floating-label-form-group {
 .btn-default:focus {
   background-color: #0085a1;
   border: 1px solid #0085a1;
-  color: white;
+  color: orange;
 }
 .pager {
   margin: 20px 0 0;
@@ -360,7 +364,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
+  color: magenta;
   background-color: #0085a1;
   border: 1px solid #0085a1;
 }
@@ -373,21 +377,21 @@ form .row:first-child .floating-label-form-group {
   cursor: not-allowed;
 }
 ::-moz-selection {
-  color: white;
+  color: pink;
   text-shadow: none;
   background: #0085a1;
 }
 ::selection {
-  color: white;
+  color: yellow;
   text-shadow: none;
   background: #0085a1;
 }
 img::selection {
-  color: white;
+  color: blue;
   background: transparent;
 }
 img::-moz-selection {
-  color: white;
+  color: red;
   background: transparent;
 }
 body {
