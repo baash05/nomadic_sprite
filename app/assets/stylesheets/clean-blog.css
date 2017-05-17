@@ -3,11 +3,13 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
+@hover_color: #4D926F;
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #404040;
+  min-width: 345px;
 }
 p {
   line-height: 1.5;
@@ -22,7 +24,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #000
 }
@@ -48,7 +49,7 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: purple;
+  border-color: black;
 }
 .navbar-custom {
   position: fixed;
@@ -69,24 +70,27 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: white;
-    border-bottom: 1px solid transparent;
+    color: grey;
+    border-bottom: 1px solid #e7e7e7; /*big screen nav colors*/
+    background-color: #f8f8f8;
   }
   .navbar-custom .navbar-brand {
-    color: blue;
-    padding: 20px;
+    padding: 15px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: red;
-    padding: 20px;
+    padding: 15px;
   }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+  .navbar-custom .nav li a:hover {
+    color: white;
+    background-color: grey;
+  }
+  .navbar-custom .navbar-brand:hover{
+    color: white;
+    background-color: grey;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -144,19 +148,22 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: red;
+  color: grey;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 10px 0;
+  }
+  .intro-header{
+    margin-top: 70px;
   }
 }
 .intro-header .site-heading,
@@ -166,21 +173,20 @@ hr.small {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 60px;
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 80px; /*big screen*/
   }
 }
 .intro-header .post-heading h1 {
@@ -192,13 +198,11 @@ hr.small {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
@@ -252,6 +256,8 @@ hr.small {
     font-size: 36px;
   }
 }
+
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
@@ -353,7 +359,6 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -364,9 +369,9 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: magenta;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  color: white;
+  background-color: grey;
+  border: 1px solid black;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
